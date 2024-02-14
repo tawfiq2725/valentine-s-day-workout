@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f1e3d3;
+  overflow: hidden;
+  background: url(./Gemini_Generated_Image.jfif);
+  background-position: center;
+  background-size: cover;
+}
+
+.valentines-day {
+  position: relative;
+  cursor: pointer;
+}
+
+.envelope {
+  position: relative;
+  background-color: burlywood;
+}
+
+.envelope:before {
+  content:"";
+  position: absolute;
+  width:254px;
+  height:254px;
+  background-color: burlywood;
+  transform: rotate(-45deg);
+  border-radius: 0 15px 0 0;
+  left:-37px;
+  top:-82px;
+}
+
+.envelope:after {
+  content:"";
+  position: absolute;
+  background-color:burlywood;
+  width:360px;
+  height:225px;
+  left:-90px;
+  top:45px;
+}
+
+.heart {
+  position: relative;
+  background-color: #e01911;
+  display: inline-block;
+  height: 180px;
+  top:50px;
+  left:0;
+  transform: rotate(-45deg);
+  width:180px;
+  transition: .5s;
+}
+  
+.heart:before, .heart:after {
+  content:"";
+  background-color: #e01911;
+  border-radius:50%;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  }
+  
+.heart:before {
+  top:-100px;
+  left:0;
+}  
+.heart:after {
+  left:100px;
+  top:0;
+}
+.front {
+  position: absolute;
+  width:0;
+  height:0;
+  border-right: 190px solid burlywood;
+  border-top: 113px solid transparent;
+  border-bottom: 113px solid transparent;
+  top:44px;
+  left:80px;
+  z-index:4;
+}
+.front:before {
+  content:"";
+  position: absolute;
+  width:0;
+  height:0;
+  border-left: 190px solid burlywood;
+  border-top: 113px solid transparent;
+  border-bottom: 113px solid transparent;
+  top:-113px;
+  left:-170px;
+}
+.front:after {
+  width:0;
+  height:0;
+  position: absolute;
+  content:"";
+  border-bottom: 150px solid burlywood;
+  border-right:180px solid transparent;
+  border-left: 180px solid transparent;
+  top:-36px;
+  left:-170px;
+}
+.text {
+  position: absolute;
+  font-family: arial;
+  letter-spacing:5px;
+  text-align: center;
+  color: white;
+  z-index:2;
+  top:80px;
+  left:15px;
+  transition: .5s;
+}
+.valentines-day:hover .heart {
+  transform: translateY(-150px) rotate(-45deg);
+}
+.valentines-day:hover .text {
+  transform: translateY(-150px);
+}
+
+</style>
+<body>
+    <div class="valentines-day">
+        <div class="envelope"></div>
+        <div class="heart"></div>
+        <div class="text">HAPPY </br>VALENTINE'S </br>DAY!</div>
+        <div class="front"></div>
+      </div>    
+</body>
+</html>
+
+
